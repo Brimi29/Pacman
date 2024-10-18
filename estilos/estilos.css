@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+    color: yellow;
+}
+
+.fondo{
+    background-size: 50%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: inherit;
+    display: flex;
+}
+
+.pacmanmotion {
+    position: relative;
+    animation: pacman 15s infinite;
+}
+
+@keyframes pacman {
+    0% {top: 15px; left: 0px}
+    25% {top: 15px; left: 155px}
+    75% {top: 75px}
+    100% {top: 100px;}
+}
